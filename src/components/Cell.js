@@ -8,7 +8,7 @@ export default class Cell extends React.Component {
 		return (
 			<div
 				id={this.props.id}
-				className={this.props.cellClass}
+				className={this.props.cell}
 				onClick={this.selectCell}
 			/>
 		);
