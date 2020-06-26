@@ -1,9 +1,16 @@
 import React from 'react';
 
-class Cell extends React.Component {
+export default class Cell extends React.Component {
+	selectCell = () => {
+		this.props.selectCell(this.props.row, this.props.col);
+	};
 	render() {
-		return <div>cell</div>;
+		return (
+			<div
+				id={this.props.id}
+				className={this.props.cell}
+				onClick={this.selectCell}
+			/>
+		);
 	}
 }
-
-export default Cell;
