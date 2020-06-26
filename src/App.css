@@ -1,3 +1,41 @@
 .App {
 	text-align: center;
+	margin: 0;
+}
+
+.cell {
+	border: 1px solid rgb(148, 145, 145);
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.cell:hover {
+	background: #009c95;
+}
+
+.grid {
+	width: 35%;
+	margin: auto;
+	margin-top: 25px;
+	line-height: 0;
+}
+
+.buttons {
+	margin: auto;
+	margin-top: 20px;
+}
+
+.dead {
+	background-color: rgb(248, 245, 245);
+}
+
+.live {
+	background-color: rgb(1, 0, 3);
+}
+
+h1 {
+	padding: 2%;
+	padding-bottom: 0;
 }
